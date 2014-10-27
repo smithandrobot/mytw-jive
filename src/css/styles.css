@@ -1,0 +1,45 @@
+.js-slide-link h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.jive-widget-formatted-body .jive-rendered-content {
+  text-align: center;
+}
+.jive-widget-formatted-body .jive-rendered-content ul {
+  padding: 0;
+  margin: 0;
+}
+.jive-widget-formatted-body .jive-rendered-content li {
+  text-align: left;
+  list-style-type: none;
+}
+.jive-widget-formatted-body .jive-rendered-content >ul {
+  position: relative;
+}
+.jive-widget-formatted-body .jive-rendered-content >ul >li {
+  background-color: #eee;
+  padding: 10px 2%;
+  float: left;
+/*text-align: center*/
+}
+.jive-widget-formatted-body .jive-rendered-content >ul >li.active {
+  background-color: #ccc;
+}
+.jive-widget-formatted-body .jive-rendered-content >ul >li>ul {
+  display: none;
+  background-color: #ccc;
+  top: 38px;
+  left: 0;
+  width: 96%;
+  position: absolute;
+  padding: 20px 2%;
+}
+.jive-widget-formatted-body .jive-rendered-content >ul >li>ul>li {
+  padding: 10px 2%;
+  margin-right: 20px;
+  float: left;
+  background-color: #ffc0cb;
+}
+.jive-widget-formatted-body .jive-rendered-content >ul > li:nth-child(1) > ul {
+  display: block;
+}
