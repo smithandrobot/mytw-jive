@@ -1,0 +1,51 @@
+colors = {
+  black: {bg: #000, font: rgba(255, 255, 255, .8)}
+  red: {bg: #F13127, font: #facbcb},
+  tan: {bg: #A2785F, font: rgba(255, 255, 255, .8)},
+  brown: {bg: #603C23, font: rgba(255, 255, 255, .8)},
+  orange: {bg:#F88B25, font: rgba(255, 255, 255, .8)},
+  lime: {bg: #BDBE21, font: rgba(255, 255, 255, .8)},
+  mint: {bg: #82B97E, font: rgba(255, 255, 255, .8)},
+  green: {bg: #00AB58, font: rgba(255, 255, 255, .8)},
+  sky: {bg: #78CED6, font: rgba(255, 255, 255, .8)},
+  teal: {bg: #00BCCE, font: rgba(255, 255, 255, .8)},
+  blue: {bg: #0076C1, font: rgba(255, 255, 255, .8)},
+  purple: {bg: #721F6A, font: rgba(255, 255, 255, .8)},
+  pink: {bg: #F259A0, font: rgba(255, 255, 255, .8)},
+  magenta: {bg: #B81957, font: rgba(255, 255, 255, .8)},
+  grey: {bg: #808184, font: #000},
+  eeeeee: {bg: #eee, font: #000}
+}
+
+hover(val)
+  if(val == rgba(255, 255, 255, .8))
+    rgba(255, 255, 255, 1)
+  else
+    val
+  
+.featured-links
+  ul
+    padding: 0
+  li 
+    list-style: none
+    display: inline-block
+    margin-bottom: 1em
+    
+    div      
+      a
+        display: block
+        color: #333333
+        text-decoration: none
+        background-color: #EEEEEE
+        min-height: 45px
+        vertical-align: top
+        padding: 20px
+for key, value in colors
+  .featured-links.background-{key}
+    li 
+      div
+        a
+          background-color: value.bg
+          color: value.font
+        a:hover
+          color: hover(value.font)

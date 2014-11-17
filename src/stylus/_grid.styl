@@ -1,0 +1,18 @@
+padding=1em;
+
+.grid
+  margin-left: 0 - padding
+
+  &:after
+    content: ''
+    display: table
+    clear: both
+
+[class*="grid-cell-"]
+  float: left;
+  padding-left: padding
+  box-sizing: border-box
+
+for i in (1...13)
+  .grid-cell-{i}
+    width: (i/12) * 100%
