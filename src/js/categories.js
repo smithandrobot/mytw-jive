@@ -23,10 +23,15 @@
       }
     }
 
+    function placeURL() {
+      var segments = window.parent.location.pathname.split('/');
+      return window.parent.location.origin+'/'+segments[1]+'/'+segments[2];
+    }
+
     function template(data) {
       return '<div class="grid-cell-3">'+
                 '<div class="categories__category">'+
-                  '<a href="'+placeURL+'/content?filterID=contentstatus[published]~category['+slugify(data.name)+']">'+
+                  '<a href="'+placeURL()+'/content?filterID=contentstatus[published]~category['+slugify(data.name)+']">'+
                     data.name+
                   '</a>'+
                 '</div>'+

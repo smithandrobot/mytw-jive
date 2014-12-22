@@ -189,10 +189,37 @@ h2 {
   min-height: 45px;
   vertical-align: top;
   padding: 20px;
+  background-repeat: no-repeat;
+  background-position: right 0;
+  background-size: 18px;
+}
+.featured-links li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-gray.png");
+}
+.featured-links li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-gray.png");
+}
+.featured-links li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-gray.png");
+}
+.featured-links.dense .grid-cell-4 {
+  width: 25%;
+}
+.featured-links.dense div a {
+  padding: 10px;
 }
 .featured-links.background-black li div a {
   background-color: #000;
   color: rgba(255,255,255,0.8);
+}
+.featured-links.background-black li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-black li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-black li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
 }
 .featured-links.background-black li div a:hover {
   color: #fff;
@@ -201,12 +228,30 @@ h2 {
   background-color: #f13127;
   color: #facbcb;
 }
+.featured-links.background-red li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-red li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-red li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
 .featured-links.background-red li div a:hover {
   color: #facbcb;
 }
 .featured-links.background-tan li div a {
   background-color: #a2785f;
   color: rgba(255,255,255,0.8);
+}
+.featured-links.background-tan li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-tan li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-tan li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
 }
 .featured-links.background-tan li div a:hover {
   color: #fff;
@@ -215,12 +260,30 @@ h2 {
   background-color: #603c23;
   color: rgba(255,255,255,0.8);
 }
+.featured-links.background-brown li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-brown li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-brown li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
 .featured-links.background-brown li div a:hover {
   color: #fff;
 }
 .featured-links.background-orange li div a {
   background-color: #f88b25;
   color: rgba(255,255,255,0.8);
+}
+.featured-links.background-orange li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-orange li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-orange li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
 }
 .featured-links.background-orange li div a:hover {
   color: #fff;
@@ -229,12 +292,30 @@ h2 {
   background-color: #bdbe21;
   color: rgba(255,255,255,0.8);
 }
+.featured-links.background-lime li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-lime li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-lime li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
 .featured-links.background-lime li div a:hover {
   color: #fff;
 }
 .featured-links.background-mint li div a {
   background-color: #82b97e;
   color: rgba(255,255,255,0.8);
+}
+.featured-links.background-mint li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-mint li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-mint li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
 }
 .featured-links.background-mint li div a:hover {
   color: #fff;
@@ -243,12 +324,30 @@ h2 {
   background-color: #00ab58;
   color: rgba(255,255,255,0.8);
 }
+.featured-links.background-green li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-green li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-green li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
 .featured-links.background-green li div a:hover {
   color: #fff;
 }
 .featured-links.background-sky li div a {
   background-color: #78ced6;
   color: rgba(255,255,255,0.8);
+}
+.featured-links.background-sky li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-sky li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-sky li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
 }
 .featured-links.background-sky li div a:hover {
   color: #fff;
@@ -257,12 +356,30 @@ h2 {
   background-color: #00bcce;
   color: rgba(255,255,255,0.8);
 }
+.featured-links.background-teal li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-teal li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-teal li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
 .featured-links.background-teal li div a:hover {
   color: #fff;
 }
 .featured-links.background-blue li div a {
   background-color: #0076c1;
   color: rgba(255,255,255,0.8);
+}
+.featured-links.background-blue li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-blue li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-blue li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
 }
 .featured-links.background-blue li div a:hover {
   color: #fff;
@@ -271,12 +388,30 @@ h2 {
   background-color: #721f6a;
   color: rgba(255,255,255,0.8);
 }
+.featured-links.background-purple li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-purple li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-purple li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
 .featured-links.background-purple li div a:hover {
   color: #fff;
 }
 .featured-links.background-pink li div a {
   background-color: #f259a0;
   color: rgba(255,255,255,0.8);
+}
+.featured-links.background-pink li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-pink li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-pink li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
 }
 .featured-links.background-pink li div a:hover {
   color: #fff;
@@ -285,12 +420,30 @@ h2 {
   background-color: #b81957;
   color: rgba(255,255,255,0.8);
 }
+.featured-links.background-magenta li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-magenta li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-magenta li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
 .featured-links.background-magenta li div a:hover {
   color: #fff;
 }
 .featured-links.background-grey li div a {
   background-color: #808184;
   color: #000;
+}
+.featured-links.background-grey li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-grey li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-grey li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
 }
 .featured-links.background-grey li div a:hover {
   color: #000;
@@ -299,10 +452,23 @@ h2 {
   background-color: #eee;
   color: #000;
 }
+.featured-links.background-eeeeee li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-gray.png");
+}
+.featured-links.background-eeeeee li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-gray.png");
+}
+.featured-links.background-eeeeee li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/build/core-images/icons/content-type-text-video-gray.png");
+}
 .featured-links.background-eeeeee li div a:hover {
   color: #000;
 }
+.featured-items {
+  margin-top: -20px;
+}
 .featured-items .featured-items__item {
+  margin-top: 20px;
   background-color: #ccc;
   display: table;
   height: 150px;

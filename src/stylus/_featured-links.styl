@@ -40,6 +40,26 @@ hover(val)
         min-height: 45px
         vertical-align: top
         padding: 20px
+        background-repeat: no-repeat
+        background-position: right 0
+        background-size: 18px
+        
+        &.text 
+          background-image: url(https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-gray.png)
+          
+        &.video
+          background-image: url(https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-gray.png)
+          
+        &.text-video
+          background-image: url(https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-gray.png)
+  &.dense
+    .grid-cell-4
+      width: 25%
+    
+    div 
+      a
+        padding: 10px
+      
 for key, value in colors
   .featured-links.background-{key}
     li 
@@ -47,5 +67,24 @@ for key, value in colors
         a
           background-color: value.bg
           color: value.font
+          if key == grey or key == eeeeee
+            &.text 
+              background-image: url(https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-gray.png)
+              
+            &.video
+              background-image: url(https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-gray.png)
+              
+            &.text-video
+              background-image: url(https://thoughtworks.fileburst.com/mythoughtworks/build/core-images/icons/content-type-text-video-gray.png)
+          else
+            &.text 
+              background-image: url(https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png)
+              
+            &.video
+              background-image: url(https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png)
+              
+            &.text-video
+              background-image: url(https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png)
+            
         a:hover
           color: hover(value.font)

@@ -1,5 +1,7 @@
 (function groupLinks() {
   $(function() {
-    $('.j-placeHdImg img', window.parent.document).wrap('<a href="#"></a>');
+    if(window.hasOwnProperty('avatarLink')) {
+      $('.j-placeHdImg img', window.parent.document).wrap('<a href="'+avatarLink+'"></a>');
+    }
   })
 })();

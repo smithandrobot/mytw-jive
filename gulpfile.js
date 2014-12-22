@@ -19,7 +19,7 @@ gulp.task('default', ['js', 'css', 'imgs', 'modules'], function() {
   return;
 })
 
-gulp.task('watch', function() {
+gulp.task('watch', ['default'], function() {
   gulp.watch(['./src/stylus/**/*.styl', './src/stylus/**/*_.styl'], ['css']);
   gulp.watch(paths.js, ['js']);
   gulp.watch(paths.imgs, ['imgs']);
