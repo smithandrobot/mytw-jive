@@ -58,7 +58,8 @@ gulp.task('modules', function() {
                    modulesPath+'featured-docs.html',
                    modulesPath+'about-group.html',
                    modulesPath+'bottom-nav.html',
-                   modulesPath+'segmenter.html'
+                   modulesPath+'segmenter.html',
+                   modulesPath+'video-grid.html'
                   ])
          .pipe(makeModules())
          .pipe(concat('modules.html'))
@@ -80,7 +81,7 @@ function makeModules(opt) {
 function finish() {
   var stream = through.obj(function(file, encoding, callback) {
     var fileString = moduleTemplate().replace(/{{content}}/g, file.contents.toString());
-    fileString = fileString.replace(/class="module/g, 'contentEditable class="module');
+    //fileString = fileString.replace(/class="module/g, 'contentEditable class="module');
     file.contents = new Buffer(fileString);
     this.push(file);
     callback();

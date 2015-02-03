@@ -47,6 +47,42 @@
 .grid-cell-12 {
   width: 100%;
 }
+.grid-cell-push-1 {
+  margin-left: 8.3333333333333%;
+}
+.grid-cell-push-2 {
+  margin-left: 16.6666666666667%;
+}
+.grid-cell-push-3 {
+  margin-left: 25%;
+}
+.grid-cell-push-4 {
+  margin-left: 33.3333333333333%;
+}
+.grid-cell-push-5 {
+  margin-left: 41.6666666666667%;
+}
+.grid-cell-push-6 {
+  margin-left: 50%;
+}
+.grid-cell-push-7 {
+  margin-left: 58.3333333333333%;
+}
+.grid-cell-push-8 {
+  margin-left: 66.6666666666667%;
+}
+.grid-cell-push-9 {
+  margin-left: 75%;
+}
+.grid-cell-push-10 {
+  margin-left: 83.3333333333333%;
+}
+.grid-cell-push-11 {
+  margin-left: 91.6666666666667%;
+}
+.grid-cell-push-12 {
+  margin-left: 100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -72,7 +108,7 @@ a {
   background-color: #000 !important;
 }
 .background--red {
-  background-color: #f13127 !important;
+  background-color: #ee312d !important;
 }
 .background--tan {
   background-color: #a2785f !important;
@@ -81,16 +117,16 @@ a {
   background-color: #603c23 !important;
 }
 .background--orange {
-  background-color: #f88b25 !important;
+  background-color: #f78f31 !important;
 }
 .background--lime {
-  background-color: #bdbe21 !important;
+  background-color: #b5b935 !important;
 }
 .background--mint {
   background-color: #82b97e !important;
 }
 .background--green {
-  background-color: #00ab58 !important;
+  background-color: #11aa58 !important;
 }
 .background--sky {
   background-color: #78ced6 !important;
@@ -102,19 +138,46 @@ a {
   background-color: #0076c1 !important;
 }
 .background--purple {
-  background-color: #721f6a !important;
+  background-color: #6a2569 !important;
 }
 .background--pink {
-  background-color: #f259a0 !important;
+  background-color: #ef5ba1 !important;
 }
 .background--magenta {
-  background-color: #b81957 !important;
+  background-color: #b11c54 !important;
 }
 .background--grey {
-  background-color: #808184 !important;
+  background-color: #808285 !important;
 }
 .background--eeeeee {
   background-color: #eee !important;
+}
+.background--earth-lite {
+  background-color: #fee0c9 !important;
+}
+.background--earth-mid {
+  background-color: #f0ba95 !important;
+}
+.background--earth-dark {
+  background-color: #9e785f !important;
+}
+.background--earth-brown {
+  background-color: #5e3e2a !important;
+}
+.background--yellow {
+  background-color: #e1f450 !important;
+}
+.background--light-green {
+  background-color: #89b77f !important;
+}
+.background--lite-blue {
+  background-color: #80c9d2 !important;
+}
+.background--mid-blue {
+  background-color: #26bdcf !important;
+}
+.background--dark-blue {
+  background-color: #1a73ba !important;
 }
 h2 {
   font-size: 40px;
@@ -225,7 +288,7 @@ h2 {
   color: #fff;
 }
 .featured-links.background-red li div a {
-  background-color: #f13127;
+  background-color: #ee312d;
   color: #facbcb;
 }
 .featured-links.background-red li div a.text {
@@ -433,7 +496,7 @@ h2 {
   color: #fff;
 }
 .featured-links.background-grey li div a {
-  background-color: #808184;
+  background-color: #808285;
   color: #000;
 }
 .featured-links.background-grey li div a.text {
@@ -463,6 +526,150 @@ h2 {
 }
 .featured-links.background-eeeeee li div a:hover {
   color: #000;
+}
+.featured-links.background-earth-lite li div a {
+  background-color: #fee0c9;
+  color: rgba(255,255,255,0.8);
+}
+.featured-links.background-earth-lite li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-earth-lite li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-earth-lite li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
+.featured-links.background-earth-lite li div a:hover {
+  color: #fff;
+}
+.featured-links.background-earth-mid li div a {
+  background-color: #f0ba95;
+  color: rgba(255,255,255,0.8);
+}
+.featured-links.background-earth-mid li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-earth-mid li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-earth-mid li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
+.featured-links.background-earth-mid li div a:hover {
+  color: #fff;
+}
+.featured-links.background-earth-dark li div a {
+  background-color: #9e785f;
+  color: rgba(255,255,255,0.8);
+}
+.featured-links.background-earth-dark li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-earth-dark li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-earth-dark li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
+.featured-links.background-earth-dark li div a:hover {
+  color: #fff;
+}
+.featured-links.background-earth-brown li div a {
+  background-color: #5e3e2a;
+  color: rgba(255,255,255,0.8);
+}
+.featured-links.background-earth-brown li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-earth-brown li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-earth-brown li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
+.featured-links.background-earth-brown li div a:hover {
+  color: #fff;
+}
+.featured-links.background-yellow li div a {
+  background-color: #e1f450;
+  color: rgba(255,255,255,0.8);
+}
+.featured-links.background-yellow li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-yellow li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-yellow li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
+.featured-links.background-yellow li div a:hover {
+  color: #fff;
+}
+.featured-links.background-light-green li div a {
+  background-color: #89b77f;
+  color: rgba(255,255,255,0.8);
+}
+.featured-links.background-light-green li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-light-green li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-light-green li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
+.featured-links.background-light-green li div a:hover {
+  color: #fff;
+}
+.featured-links.background-lite-blue li div a {
+  background-color: #80c9d2;
+  color: rgba(255,255,255,0.8);
+}
+.featured-links.background-lite-blue li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-lite-blue li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-lite-blue li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
+.featured-links.background-lite-blue li div a:hover {
+  color: #fff;
+}
+.featured-links.background-mid-blue li div a {
+  background-color: #26bdcf;
+  color: rgba(255,255,255,0.8);
+}
+.featured-links.background-mid-blue li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-mid-blue li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-mid-blue li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
+.featured-links.background-mid-blue li div a:hover {
+  color: #fff;
+}
+.featured-links.background-dark-blue li div a {
+  background-color: #1a73ba;
+  color: rgba(255,255,255,0.8);
+}
+.featured-links.background-dark-blue li div a.text {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-white.png");
+}
+.featured-links.background-dark-blue li div a.video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-video-white.png");
+}
+.featured-links.background-dark-blue li div a.text-video {
+  background-image: url("https://thoughtworks.fileburst.com/mythoughtworks/core-images/icons/content-type-text-video-white.png");
+}
+.featured-links.background-dark-blue li div a:hover {
+  color: #fff;
 }
 .featured-items {
   margin-top: -20px;
@@ -643,4 +850,21 @@ h2 {
   width: 100%;
   bottom: 0;
   padding-bottom: 10px;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

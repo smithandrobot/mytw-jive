@@ -17,12 +17,12 @@
         var docData = JSON.parse(json);
 
         $('.featured-docs ul').empty();
-        
+        console.log(docData)
         $.each(docData.list, function(index, doc) {
-          if(doc.type === 'document') {
+          //if(doc.type === 'document') {
             var $docEl = $(template(doc));
             $('.featured-docs ul').append($docEl);
-          }
+          //}
         })
       }else{
         console.log('Error getting featured doc data. Response code: ', d.status, d)
