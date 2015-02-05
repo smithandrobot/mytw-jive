@@ -12,7 +12,7 @@ var paths = {
   js: './src/js/*.js',
   tests: './tests/*.html',
   jsTests: './src/js/tests/**/*',
-  imgs: './src/core-images/**/*'
+  imgs: ['./src/core-images/**/*', './src/visual-identity-images/**/*']
 }
 
 gulp.task('default', ['js', 'css', 'imgs', 'modules'], function() {

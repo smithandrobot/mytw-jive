@@ -1,0 +1,202 @@
+colors = {
+  black: #000,
+  red: #EE312D,
+  tan: #A2785F,
+  brown: #603C23,
+  orange: #F78F31,
+  lime: #B5B935,
+  mint: #82B97E,
+  green: #11AA58,
+  sky: #78CED6,
+  teal: #00BCCE,
+  blue: #0076C1,
+  purple: #6A2569,
+  pink: #EF5BA1,
+  magenta: #B11C54,
+  grey: #808285,
+  eeeeee: #eee,
+  earth-lite: #FEE0C9,
+  earth-mid: #F0BA95,
+  earth-dark: #9E785F,
+  earth-brown: #5E3E2A,
+  yellow: #E1F450,
+  light-green: #89B77F,
+  lite-blue: #80C9D2,
+  mid-blue: #26BDCF,
+  dark-blue: #1A73BA
+}
+
+.visual-identity
+  color: #999999
+  font-weight: 200
+  max-width: 900px
+  margin: 0 auto
+    
+  .row
+    clear: both
+    margin-top: 40px
+    overflow: hidden
+    
+  .row:first-child
+    margin-top: 0
+
+  a 
+    color: #EE0B77
+    
+  .grid
+    margin-left: -4em
+  
+  .grid-cell-6
+    padding-left: 4em
+
+  h2
+    text-align: left
+    border-bottom: 1px solid #000
+    margin-bottom: 20px
+    
+  h3
+    font-size: 22px
+    
+  ol
+    padding: 0
+    list-style-position: inside
+    li 
+      color: #f58a33
+      font-size: 22px
+      font-weight: 900
+      font-style: italic
+      margin: 0
+      padding: 0
+      
+      &.bergundy
+        color: #b51b58
+      
+      .media 
+        color: #999999
+        font-size: 16px
+        font-style: normal
+        font-weight: 200
+        
+        .media__img
+          float: left
+          width: 20%
+          height: auto
+          margin-right: 2%
+          
+        .media_description 
+          overflow: hidden
+          
+  // Announcements
+  .anncmnts
+    border-bottom: 1px solid #000
+    
+    &> div:first-child
+        padding-top: 0
+        
+    &> div:last-child
+      border: none
+      
+    .anncmnts__anncmnt
+      padding: 20px 0
+      border-bottom: 1px solid #eee
+      
+      h3
+        margin: 0
+        line-height: 1.5em
+        
+        .date
+          font-size: 40px
+          font-weight: 900
+          
+        .month
+          font-size: 18px
+          font-weight: 900
+          font-style: italic
+          color: #999999
+          text-transform: uppercase
+      h4 
+        line-height: 1em
+        font-size: 22px
+        font-weight: 200
+        margin: 0
+        color: #000
+        
+        a 
+          text-decoration: none
+        
+      p 
+        margin-top: 5px
+        margin-bottom: 0
+        
+  .ask
+    margin-top: 30px
+    
+    h4
+      line-height: 1em
+      font-size: 22px
+      font-weight: 200
+      margin: 0
+      color: #000
+      
+    // Search Form
+    form
+      margin-top: 20px
+      
+      input[type="text"],
+      input[type="submit"]
+        float: left
+        height: 35px
+        border: none
+        font-size: 16px
+        font-weight: 200
+        
+      input[type="text"]
+        width: 73%
+        margin-right: 2%
+        border-bottom: 2px solid
+        border-color: #ccc
+        background-color: #eee
+        color: #999
+        text-indent: 10px
+        transition: all .2sec ease-out
+        
+        &:focus
+          box-shadow: inset 0 0 1px #000
+          outline: none
+          border-color: #666666
+        
+      input[type="submit"]
+        width: 25%
+        background-color: #ee5ba0
+        color: #fff
+        cursor: pointer
+        font-family: font-stack
+        transition: all .2s ease-out
+        
+        &:hover 
+          transform: translate(0, -2px)
+
+  .link-list
+    padding: 0
+    margin: -20px 0 0
+    
+    li
+      list-style-type: none
+      padding: 0
+      border-bottom: 1px solid #eee
+    a
+      text-decoration: none
+      display: block
+      padding: 20px 0
+      font-size: 22px
+      background-repeat: no-repeat
+      background-position: center right
+      &.box
+        background-image:url(https://thoughtworks.fileburst.com/mythoughtworks/visual-identity-images/icon-box.png)
+      &.download
+        background-image:url(https://thoughtworks.fileburst.com/mythoughtworks/visual-identity-images/icon-download.png)
+      
+  for key, value in colors
+    .{key}
+      color: value
+    
