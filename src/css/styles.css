@@ -874,6 +874,7 @@ h2 {
   font-weight: 200;
   max-width: 900px;
   margin: 0 auto;
+  padding: 0;
 }
 .visual-identity .row {
   clear: both;

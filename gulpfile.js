@@ -8,11 +8,11 @@ var through = require('through2');
 
 var paths = {
   css: './src/css/**/*',
-  stylus: ['./src/stylus/styles.styl', './src/stylus/overrides.styl'],
+  stylus: ['./src/stylus/styles.styl', './src/stylus/overrides.styl', './src/stylus/visual-identity-overrides.styl'],
   js: './src/js/*.js',
   tests: './tests/*.html',
   jsTests: './src/js/tests/**/*',
-  imgs: ['./src/core-images/**/*', './src/visual-identity-images/**/*']
+  imgs: './src/**/*.?(png|jpg|gif)'
 }
 
 gulp.task('default', ['js', 'css', 'imgs', 'modules'], function() {
@@ -46,7 +46,7 @@ gulp.task('js', function() {
 
 gulp.task('imgs', function() {
   return gulp.src(paths.imgs, {read: true})
-        .pipe(gulp.dest('./build/core-images'))
+        .pipe(gulp.dest('./build'))
 })
 
 gulp.task('modules', function() {

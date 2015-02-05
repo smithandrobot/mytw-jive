@@ -1,0 +1,48 @@
+.jive-widget-askaquestionwidget .jive-widgetsize-large {
+  border-top: 1px solid #000 !important;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.jive-widget-askaquestionwidget .jive-widgetsize-large h4 span {
+  color: #000;
+  font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 40px;
+  font-weight: 200;
+}
+.jive-widget-askaquestionwidget .jive-widgetsize-large input[type="text"],
+.jive-widget-askaquestionwidget .jive-widgetsize-large button[type="submit"] {
+  float: left;
+  height: 35px;
+  border: none;
+  font-size: 16px;
+  font-weight: 200;
+}
+.jive-widget-askaquestionwidget .jive-widgetsize-large input[type="text"] {
+  width: 73%;
+  margin-right: 2%;
+  border-bottom: 2px solid;
+  border-color: #ccc;
+  background-color: #eee;
+  color: #999;
+  text-indent: 10px;
+  transition: all 0.2s ec ease-out;
+  padding: 0;
+}
+.jive-widget-askaquestionwidget .jive-widgetsize-large input[type="text"]:focus {
+  box-shadow: inset 0 0 1px #000;
+  outline: none;
+  border-color: #666;
+}
+.jive-widget-askaquestionwidget .jive-widgetsize-large button[type="submit"] {
+  width: 25%;
+  background-color: #ee5ba0;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "Helvetica Neue", Arial, sans-serif;
+  transition: all 0.2s ease-out;
+  margin: 0;
+}
+.jive-widget-askaquestionwidget .jive-widgetsize-large button[type="submit"]:hover {
+  background-color: #ee5ba0 !important;
+  transform: translate(0, -2px);
+}
