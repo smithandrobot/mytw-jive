@@ -23,9 +23,12 @@ colors = {
   light-green: #89B77F,
   lite-blue: #80C9D2,
   mid-blue: #26BDCF,
-  dark-blue: #1A73BA
+  dark-blue: #1A73BA,
+  bergundy: #b51b58
 }
-  
+
+grid-spacing = 2em
+
 .visual-identity
   color: #999999
   font-weight: 200
@@ -33,23 +36,25 @@ colors = {
   margin: 0 auto
   padding: 0
   
-  .row
+   .row
     clear: both
     margin-top: 40px
     overflow: hidden
     
   .row:first-child
     margin-top: 0
+    
+  .grid
+    margin-left: -grid-spacing
+    margin-right: -grid-spacing
+  
+  .grid-cell-6, .grid-cell-4
+    padding-left: grid-spacing
+    padding-right: grid-spacing
 
   a 
     color: #EE0B77
     
-  .grid
-    margin-left: -4em
-  
-  .grid-cell-6
-    padding-left: 4em
-
   h2
     text-align: left
     border-bottom: 1px solid #000
@@ -89,7 +94,7 @@ colors = {
           
   // Announcements
   .anncmnts
-    border-bottom: 1px solid #000
+    //border-bottom: 1px solid #000
     
     &> div:first-child
         padding-top: 0
@@ -99,7 +104,7 @@ colors = {
       
     .anncmnts__anncmnt
       padding: 20px 0
-      border-bottom: 1px solid #eee
+      //border-bottom: 1px solid #eee
       
       h3
         margin: 0
