@@ -1388,6 +1388,8 @@ ol li .media .media_description {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  letter-spacing: -3px;
+  margin-top: 0.3em;
 }
 .vidual-identity-header h2.title {
   font-weight: 900;

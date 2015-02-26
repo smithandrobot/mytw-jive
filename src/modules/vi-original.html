@@ -1,0 +1,443 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+<style type="text/css">
+@import url('/themes/rebranding_visual_refresh/styles/webfonts/fonts.css');
+    body {
+        font-weight: 100;
+    }
+    h1,h3,h4,h5,h5,h6{
+        font-family: 'Open Sans', 'OpenSansLight',sans-serif !important;
+    }
+    h2{
+      font-family: 'Open Sans', 'OpenSansItalic',sans-serif !important;
+      font-style: italic;
+    }
+    ul,li,a{
+        font-family: 'Open Sans', 'OpenSansLight',sans-serif !important;
+    }
+    #tab1,#tab2,#tab3 {
+        background-color: #eeeeee;
+        min-height: 230px;
+    }
+
+    .tab .tab__head {
+        margin: 0;
+        padding: 0;
+        float: left;
+        list-style: none;
+        width: 100%;
+    }
+
+    .tab .tab__head li {
+        font-family: 'OpenSansLight',sans-serif;
+        width:33%;
+        float: left;
+        margin: 0 1px 0 0;
+        cursor: pointer;
+        padding: 10px 0;
+        height: 32px;
+        line-height: 31px;
+        color: #333333;
+        border-bottom: 0px;
+        overflow: hidden;
+        position: relative;
+
+        background-color: #00aa5b;
+    }
+
+    .tab .tab__head li:hover {
+        background-color: #e5e5e5;
+        color: #000;
+    }
+
+    .tab .tab__head li.active {
+
+        background-color: #eeeeee;
+        color: #333;
+
+        display: block;
+    }
+
+    .tab .tab__container {
+
+        border-top: 0px;
+        clear: both;
+        float: left;
+        width: 100%;
+    }
+
+    .tab .tab__content {
+        padding: 20px;
+        display: none;
+    }
+    .col1,.col2,.col3{
+        width:33%;
+        float:left;
+    }
+    #tab1 li a,#tab2 li a,#tab3 li a{
+        display: block;
+        font-family: 'Open Sans', 'OpenSansLight',sans-serif;
+        text-decoration: none;
+        color:#ee5ba1;
+        padding:10px;
+font-weight:300;
+ text-align:left;
+    }
+
+
+.section2 li{
+font-family: 'OpenSansLight',sans-serif;
+font-size:20px;
+text-decoration: none;
+}
+
+.section2 a:active, .section2 a:link, .section2 a:focus , .section2 a:visited{
+color:#333;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+
+        $(".tab__content").hide();
+        $(".tab__content:first").show();
+
+        $(".tab__head li").click(function () {
+
+            $(".tab__content").hide();
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).show();
+            $(".tab__head li").removeClass("active");
+            $(this).addClass("active");
+
+        });
+
+        // make the avatar a link back to brandhub
+        $('.j-placeHdImg img', window.parent.document).wrap('<a href="https://my.thoughtworks.com/groups/brandhub"></a>');
+
+    });
+</script>
+<div>
+
+    <ul id="mainnav" style="list-style: none;margin: 0;padding: 0;background-color: #f1f1f1;overflow: auto;">
+        <li style="float: left;padding: 20px 20px;list-style:none;"><a
+                style="text-decoration: none;color: #ee5ba0;font-family: sans-serif;font-size:20px;font-weight:300;" href="#overview">Introductions</a>
+        </li>
+        <li id="newstab" style="float: left;padding: 20px 20px;list-style:none;"><a href="#news"
+                style="text-decoration: none;color: #ee5ba0;font-family: sans-serif;font-size:20px;font-weight:300;"  >News</a>
+        </li>
+        <li style="float: left;padding: 20px 20px;list-style:none;;"><a href="#reslib"
+                style="text-decoration: none;color: #ee5ba0;font-family: sans-serif;font-size:20px;font-weight:300;" >Resource
+            Library</a></li>
+        <li style="float: left;padding: 20px 20px;list-style:none;"><a href="#cs"
+                style="text-decoration: none;color: #ee5ba0;font-family: sans-serif;font-size:20px;font-weight:300;" >Client
+            Stories</a></li>
+    </ul>
+
+    <div id="overview" class="section1" style="min-height:300px;background-color:#444444;text-align:center;padding:20px 0;">
+        <h2 style="font-family: 'OpenSansItalic',sans-serif;color:#ffffff;font-size:28px;font-weight:300; margin-bottom:25px;">
+            Introducing Your New Brand</h2>
+<div>
+<iframe src="https://docs.google.com/a/thoughtworks.com/file/d/0B1JGsZP8TnIeREJmVkVFOS1kb2M/preview" width="400" height="250" style="margin-right:100px;"></iframe>
+
+</iframe>
+ <a href="https://thoughtworks.box.com/s/ijkggyabvtroblzzi74e" target="_blank" style="text-decoration:none;">
+                    <img class="jive-image"
+                        height="250" src="/servlet/JiveServlet/download/23434-6-125649/Discovery%20deck%20audio.png" width="400" style="margin-left:50px;"/></a></p>    
+</div>
+              
+
+    </div>
+    <div id="news" class="section2" style="overflow:auto;">
+        <div class="leftcol" style="min-height:240px;width:50%;background-color:#85b880;float:left;">
+            <h2 style="font-family: 'OpenSansItalic',sans-serif;color:#333;font-size:28px;font-weight:400; padding: 0 40px;text-align:center;">
+                What's New</h2>
+            <ul style="list-style: none;">
+                 <li> <a href="https://my.thoughtworks.com/groups/image-tinter/overview" target="_blank" style="text-decoration:none;">Tint Images ></a></li>
+ <li> <a href="http://gentle-reef-2837.herokuapp.com/" target="_blank" style="text-decoration:none;">New email signatures ></a></li>
+ <li> <a href="https://thoughtworks.box.com/s/nrsag08exqj38ia08qm8" target="_blank" style="text-decoration:none;">New TW soft copy letterhead ></a></li>
+ <li> <a href="https://thoughtworks.box.com/s/4t7l7vs4oaceufj6wm1t" target="_blank" style="text-decoration:none;">New Sales Deck ></a></li>
+ <li> <a href="https://thoughtworks.box.com/s/jkf841dgcel9pyrwlp2g" target="_blank" style="text-decoration:none;">Updated Presentation deck templates ></a></li>                 
+ <li> <a href="https://my.thoughtworks.com/groups/photo-competition" target="_blank" style="text-decoration:none;">Photo Library Assets ></a></li>                            
+            </ul>
+        </div>
+        <div class="rightcol" style="min-height:240px;width:50%;background-color:#7eced5;float:left;">
+            <h2 style="font-family:'OpenSansItalic', sans-serif;color:#333;font-size:28px;font-weight:400;padding:0 40px;text-align:center;">
+
+                What's Coming Next</h2>
+            <ul style="list-style: none;">
+                <li>Updated Inception Deck</li>
+                <li>Method cards</li>
+                <li>ThoughtWorks notebooks</li>
+                <li>New glyph icons </li>
+                <li>What do you need next? Tell us!</li>
+<p>&nbsp</p>
+            </ul>
+        </div>
+    </div>
+
+      <div id="reslib" class="section3" style="min-height:600px;background-color:#eeeeee;text-align:center;">
+        <h2 style="margin: 0;font-family:'OpenSansItalic',sans-serif;color:#000000;font-size:28px;font-weight:300;padding-top:25px;margin-bottom:0;">
+            Resource Library</h2>
+
+        <h3 style="font-family: sans-serif;color:#b8b8b8;font-size:20px;font-weight:300;margin-bottom:25px;margin-top:0;">
+            Follow these links to our Box.com folders for brand goodies.</h3>
+
+        <div style="overflow: auto;">
+            <div class="image-holder" style="float:left;width:33%;">
+                <a href="https://thoughtworks.box.com/s/arjg2frfdzh4acv5opak" style="text-decoration:none;" target="_blank">
+                    <img alt="logos-240x180.png" class="jive-image"
+                         src="/servlet/JiveServlet/download/23434-4-125617/logos-240x180.png"/>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:24px;font-weight:300; margin-top:10px; margin-bottom:18px;">
+                        Logos</h4>
+                </a>
+            </div>
+            <div class="image-holder" style="float:left;width:33%;text-align:center;">
+                <a href="https://thoughtworks.box.com/s/tuqsom8r4kyfg2nimeuu" style="text-decoration:none;" target="_blank">
+                    <img alt="guidelines-240x180.png" class="jive-image"
+                         src="/servlet/JiveServlet/download/23434-4-125615/guidelines-240x180.png"/>
+                    <h4 style="font-family:sans-serif;color:#ec5b9e;font-size:24px;font-weight:300; margin-top:10px; margin-bottom:18px;">
+                        Guidelines & How-Tos</h4>
+                </a>
+            </div>
+            <div class="image-holder" style="float:left;width:33%;text-align:center;">
+                <a href="https://thoughtworks.box.com/s/jkf841dgcel9pyrwlp2g" style="text-decoration:none;" target="_blank">
+                    <img alt="templates-240x180.png" class="jive-image"
+                         src="/servlet/JiveServlet/download/23434-4-125614/templates-240x180.png"/></p>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:24px;font-weight:300; margin-top:10px; margin-bottom:18px;">
+                        Templates</h4>
+                </a>
+            </div>
+            <div class="image-holder" style="float:right;width:33%;text-align:center;">
+                <a href="https://thoughtworks.box.com/s/vpfnjlfy5uxtaf0070nl" style="text-decoration:none;" target="_blank">
+                    <img alt="decks-240x180.png" class="jive-image"
+                         src="/servlet/JiveServlet/download/23434-4-125613/decks-240x180.png"/>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:24px;font-weight:300; margin-top:10px; margin-bottom:18px;">
+                        Decks</h4>
+                </a>
+            </div>
+            <div class="image-holder" style="float:left;width:33%;text-align:center;">
+                <a href="https://thoughtworks.box.com/s/7o8vjwfl4p9vw0y3a1e2" style="text-decoration:none;" target="_blank">
+                    <img alt="image-library-240x180.png" class="jive-image"
+                         src="/servlet/JiveServlet/download/23434-4-125622/image-library-240x180.png"/>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:24px;font-weight:300; margin-top:10px; margin-bottom:18px;">
+                        Image Library</h4>
+                </a>
+            </div>
+            <div class="image-holder" style="float:left;width:33%;text-align:center;">
+                <a href="https://thoughtworks.box.com/s/sx27ldon8jkzbulbxh44" style="text-decoration:none;" target="_blank">
+                    <img alt="glyph-goodies-240x180.png" class="jive-image"
+                         src="/servlet/JiveServlet/download/23434-4-125612/glyph-goodies-240x180.png"/>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:24px;font-weight:300; margin-top:10px; margin-bottom:18px;">
+                        Glyph Goodies</h4>
+                </a>
+            </div>
+            <div class="image-holder" style="float:left;width:33%; text-align:center;">
+                <a href="https://thoughtworks.box.com/s/670ykdt6sw4rvf871tfs" style="text-decoration:none;" target="_blank">
+                    <img alt="logos-240x180.png" class="jive-image"
+                         src="/resources/statics/73315/Recruitment_Tools_03.png" style="padding: 37px 58.5px;"/>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:24px;font-weight:300; margin-top:10px; margin-bottom:18px;">
+                        Recruitment Tools</h4>
+                </a>
+            </div>
+            <div class="image-holder" style="float:left;width:33%; text-align:center;">
+                <a href="https://thoughtworks.box.com/s/4t7l7vs4oaceufj6wm1t" style="text-decoration:none;" target="_blank">
+                    <img alt="logos-240x180.png" class="jive-image"
+                         src="/resources/statics/73315/SalesTools_06.png" style="padding: 37px 58.5px;"/>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:24px;font-weight:300; margin-top:10px; margin-bottom:18px;">
+                        Sales Tools</h4>
+                </a>
+            </div>
+            <div class="image-holder" style="float:left;width:33%; text-align:center;">
+                <a href="https://thoughtworks.box.com/s/vbkwqwncdzzgiq5lejf8" style="text-decoration:none;" target="_blank">
+                    <img alt="logos-240x180.png" class="jive-image"
+                         src="/resources/statics/73315/OfficeStationery_03.png" style="padding-right: 58.5px;padding-left: 58.5px;"/>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:24px;font-weight:300; margin-top:10px; margin-bottom:18px;">
+                        Office Artwork &amp; Stationery</h4>
+                </a>
+            </div>
+        </div>
+   <hr style="border: 1px solid #ffffff;">
+        <div style="margin-top:15px;overflow:auto;">
+            <div class="flgcontainer" style="float:left;display:block;width:25%;">
+                <a href="https://thoughtworks.box.com/s/vde5db6ame49iukkaq38" style="text-decoration:none;" target="_blank">
+                    <img alt="flag-spain-90x64.png" class="jive-image"
+                         src="/servlet/JiveServlet/download/23434-4-125621/flag-spain-90x64.png"/>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:20px;font-weight:300; margin-top:10px; margin-bottom:10px;">
+                        Español</h4>
+                </a>
+            </div>
+            <div class="flgcontainer" style="float:left;display:block;width:25%;">
+                <a href="https://thoughtworks.box.com/s/7ue58rvaytwhsp0u88cv" style="text-decoration:none;" target="_blank">
+                    <img alt="flag-brazil-90x64.png" class="jive-image"
+                         src="/servlet/JiveServlet/download/23434-4-125619/flag-brazil-90x64.png"/>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:20px;font-weight:300; margin-top:10px; margin-bottom:10px;">
+                        Português </h4>
+                </a>
+            </div>
+            <div class="flgcontainer" style="float:left;display:block;width:25%;">
+                <a href="https://thoughtworks.box.com/s/d70j7isztoph8wou62rz" style="text-decoration:none;" target="_blank">
+                    <img alt="flag-china-90x64.png" class="jive-image"
+                         src="/servlet/JiveServlet/download/23434-4-125618/flag-china-90x64.png"/>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:20px;font-weight:300; margin-top:10px; margin-bottom:10px;">
+                        中文</h4>
+                </a>
+            </div>
+            <div class="flgcontainer" style="float:left;display:block;width:25%;">
+                <a href="https://thoughtworks.box.com/s/8u6rseqa2s9uwn62rumy" style="text-decoration:none;" target="_blank">
+                    <img alt="flag-germany-90x64.png" class="jive-image"
+                         src="/servlet/JiveServlet/download/23434-4-125620/flag-germany-90x64.png"/>
+                    <h4 style="font-family: sans-serif;color:#ec5b9e;font-size:20px;font-weight:300; margin-top:10px; margin-bottom:10px;">
+                        Deutsch </h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+<div id="cs" class="section4" style="overflow: auto;background-color: #00aa5b;text-align: center;">
+    <h2 style="margin: 0;font-family:'OpenSansItalic', sans-serif;color:#ffffff;font-size:28px;font-weight:300; margin-bottom:25px;padding-top:10px;">
+        Client Stories</h2>
+
+    <div class="tab">
+
+        <ul class="tab__head">
+            <li class="active" rel="tab1">By Country</li>
+            <li rel="tab2">By Capabilities</li>
+            <li rel="tab3">By Industries</li>
+        </ul>
+
+        <div class="tab__container">
+
+            <div id="tab1" class="tab__content">
+                <div class="col1">
+                    <ul style="list-style: none;">
+                        <li>
+                            <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[region-australia]">Australia
+                                >> </a></li>
+                        <li>
+                            <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[region-china]">China
+                                >> </a></li>
+                        <li>
+                            <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[region-india]">India
+                                >> </a></li>
+                        <li>
+                            <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[region-germany]">Germany
+                                >> </a></li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <ul style="list-style: none;">
+                        <li>
+                            <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[region-uk]">UK
+                                >> </a></li>
+                        <li>
+                            <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[region-us]">US
+                                >> </a></li>
+                        <li>
+                            <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[region-canada]">Canada
+                                >> </a></li>
+                        <li>
+                            <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[region-brazil]">Brazil
+                                >> </a></li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <ul style="list-style: none;">
+                        <li>
+                            <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[region-south-africa]">South
+                                Africa >></a></li>
+                        <li>
+                            <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[region-uganda]">Uganda
+                                >></a></li>
+                        <li><a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[region-singapore]">Singapore >></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!- #tab1 ->
+
+                <div id="tab2" class="tab__content">
+                            <div class="col1">
+                                <ul style="list-style: none;">
+                                    <li>
+                                        <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[capability-analytics]">Analytics
+                                            >></a></li>
+                                    <li><a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[capability-bigdata]">Big Data >></a></li>
+                            <li><a href=" /community/marketing/casestudies/content?filterID=contentstatus[published]~category[capability-xd]">Experience
+                                        Design >></a></li>
+                                    <li><a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[capability-mobile]">Mobile >></a></li>
+                        </ul>
+                    </div>
+                    <div class=" col2">
+                                        <ul style="list-style: none;">
+                                            <li><a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[capability-cd]">Continuous Delivery >></a></li>
+                            <li><a href=" /community/marketing/casestudies/content?filterID=contentstatus[published]~category[capability-transformation]">Transformation
+                                                >></a></li>
+                                            <li><a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[capability-open-source]">Open Source >></a></li>
+                            <li><a href=" /community/marketing/casestudies/content?filterID=contentstatus[published]~category[capability-cloud]">Cloud
+                                                >></a></li>
+                                        </ul>
+                            </div>
+                            <div class="col3">
+                                <ul style="list-style: none;">
+                                    <li><a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[capability-distributed]">Distributed Delivery >></a></li>
+                            <li><a target="_blank" href=" /community/marketing/casestudies/content?filterID=contentstatus[published]~category[capability-studios]">Studios
+                                        >></a></li>
+                                </ul>
+                            </div>
+                </div>
+                <!- #tab2 ->
+
+                <div id="tab3" class="tab__content">
+                    <div class="col1">
+                        <ul style="list-style: none;">
+                            <li>
+                                <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-retail]">Retail
+                                    >></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-education]">Education >></a>
+                            </li>
+
+                            <li><a target="_blank" href=" /community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-ehealth]">eHealth
+                                >></a></li>
+                            <li><a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-telecom]">Telecom >></a></li>
+                            <li><a href=" /community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-travel]">Travel
+                                >></a></li>
+                        </ul>
+                    </div>
+                    <div class="col2">
+                        <ul style="list-style: none;">
+                            <li>
+                                <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-financial-services]">Financial
+                                    Services >></a></li>
+                            <li>
+                                <a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-media-entertainment]">Media
+                                    & Entertainment >></a></li>
+                            <li><a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-sip]">SIP >></a></li>
+                            <li><a target="_blank" href=" /community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-ebusiness]">eBusiness
+                                >></a></li>
+                            <li><a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-activism]">Activism >></a></li>
+                        </ul>
+                    </div>
+                    <div class=" col3">
+                                <ul style="list-style: none;">
+                                    <li><a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-publishing]">Publishing >></a></li>
+                            <li><a href=" /community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-software-tech]">Software
+                                        & Technology >></a></li>
+                                    <li><a target="_blank" href="/community/marketing/casestudies/content?filterID=contentstatus[published]~category[industry-government]">Government >></a></li>
+                            </ul>
+                    </div>
+                </div>
+                <!- #tab3 ->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
