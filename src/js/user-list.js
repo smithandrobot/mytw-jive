@@ -20,7 +20,7 @@
     }
 
     function getUsers() {
-      var endPoint = 'https://my.thoughtworks.com/api/core/v3/members/places/'+placeID;
+      var endPoint = 'https://thoughtworks.jiveon.com/api/core/v3/members/places/'+placeID;
       if($el.length > 0) {
         $.ajax(endPoint)
          .fail(onData)
@@ -55,4 +55,4 @@
              '</li>';
     }
   })
-})()
+})();

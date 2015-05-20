@@ -1,6 +1,6 @@
 (function categories() {
   $(function() {
-    var categoriesEndPoint = 'https://my.thoughtworks.com/api/core/v3/places/'+placeID+'/categories'
+    var categoriesEndPoint = 'https://thoughtworks.jiveon.com/api/core/v3/places/'+placeID+'/categories'
     var $categories = $('.categories');
 
     if($categories.length > 0) {
