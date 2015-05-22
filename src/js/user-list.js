@@ -49,7 +49,7 @@
 
     function template(data) {
       return '<li data-mytw-author="'+data.person.displayName+'">'+
-             '  <a href="'+data.person.resources.html.ref+'">'+
+             '  <a target="_parent" href="'+data.person.resources.html.ref+'">'+
              '    <img src="'+data.person.resources.avatar.ref+'" alt="'+data.person.displayName+'">'+
              '  </a>'+
              '</li>';

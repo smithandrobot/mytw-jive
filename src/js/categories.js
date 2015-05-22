@@ -31,7 +31,7 @@
     function template(data) {
       return '<div class="grid-cell-3">'+
                 '<div class="categories__category">'+
-                  '<a href="'+placeURL()+'/content?filterID=contentstatus[published]~category['+slugify(data.name)+']">'+
+                  '<a target="_parent" href="'+placeURL()+'/content?filterID=contentstatus[published]~category['+slugify(data.name)+']">'+
                     data.name+
                   '</a>'+
                 '</div>'+
