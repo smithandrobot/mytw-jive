@@ -34,7 +34,7 @@
               '  <div class="featured-docs__doc">'+
               '    <a target="_parent" href="'+data.resources.html.ref+'">'+data.subject+'</a>'+
               '    <div class="featured-docs__author">'+
-              '      <a href="'+data.author.resources.html.ref+'">'+
+              '      <a target="_parent" href="'+data.author.resources.html.ref+'">'+
               '        <img src="'+data.author.resources.avatar.ref+'" alt=""><br/>'+
               '        '+data.author.displayName+
               '      </a>'+
