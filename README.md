@@ -2,6 +2,11 @@ MYTW
 =========
 Source for my.thoughtworks.com marketing content.
 
+Install
+=== 
+* ```cd <this repo>```
+* ```npm install``` 
+
 Build
 === 
 Compiles CSS, concats js and put all the modules on one page
