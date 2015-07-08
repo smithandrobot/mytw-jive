@@ -17,5 +17,5 @@ Compiles CSS, concats js and put all the modules on one page
 
 Deploy
 ---
-You'll need your SSH key on Fileburst for this to work
+You'll need your SSH key on Fileburst for this to work 
 ```fab sync```
