@@ -34,7 +34,7 @@
         $('.group-details__users ul').empty();
         $.each(userData.list, function(index, user) {
           if(user.state === 'owner') {
-            if(user.person.displayName !== 'David Ford') {
+            if(user.person.displayName !== 'David Ford') { // This is simply to hide me :)
               var $userEl = $(template(user));
               $userEl.on('mouseover', onMouseOver);
               $userEl.on('mouseout', onMouseOut);

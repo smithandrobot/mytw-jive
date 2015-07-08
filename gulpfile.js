@@ -32,15 +32,14 @@ gulp.task('css', ['stylus'], function() {
 
 gulp.task('stylus', function() {
   return gulp.src(paths.stylus)
-        //.pipe(stylus({compress: true}))
-        .pipe(stylus())
+        .pipe(stylus({compress: true}))
         .pipe(gulp.dest('./src/css'))
 })
 
 gulp.task('js', function() {
   return gulp.src(paths.js, {read: true})
         .pipe(concat('app.js'))
-        //.pipe(uglify())
+        //.pipe(uglify()) // uncomment do compression, this is commented for debugging
         .pipe(gulp.dest('./build/js'))
 })
 
@@ -49,6 +48,11 @@ gulp.task('imgs', function() {
         .pipe(gulp.dest('./build'))
 })
 
+/* 
+ * This puts all the modules into one file so that Marketers
+ * can go to https://thoughtworks.fileburst.com/mythoughtworks/modules/modules.html
+ * and copy paste HTML to add to thier page.
+*/
 gulp.task('modules', function() {
   var modulesPath = './src/modules/';
   return gulp.src([modulesPath+'categories.html', 
@@ -67,6 +71,10 @@ gulp.task('modules', function() {
          .pipe(gulp.dest('./build/modules/'))
 })
 
+
+/* 
+ Through Stream helper to put all the modules into one file.
+*/
 function makeModules(opt) {
   var stream = through.obj(function(file, encoding, callback) {
     console.log('file.path: '+file.path);
@@ -78,10 +86,13 @@ function makeModules(opt) {
   return stream;
 }
 
+
+/* 
+ Wrapper that uses the template + filestream to put all the modules into one file.
+*/
 function finish() {
   var stream = through.obj(function(file, encoding, callback) {
     var fileString = moduleTemplate().replace(/{{content}}/g, file.contents.toString());
-    //fileString = fileString.replace(/class="module/g, 'contentEditable class="module');
     file.contents = new Buffer(fileString);
     this.push(file);
     callback();
@@ -90,6 +101,10 @@ function finish() {
   return stream;
 }
 
+
+/* 
+ Template to put modules into one file.
+*/
 function moduleTemplate() {
   return '<html>\n'+
          '  <head>\n'+
