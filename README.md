@@ -8,7 +8,7 @@ Install
 * ```npm install``` 
 
 Build
----
+--- 
 Compiles CSS, concats js and put all the modules on one page
 * Default - ```gulp```
 * Compile CSS - ```gulp css```
